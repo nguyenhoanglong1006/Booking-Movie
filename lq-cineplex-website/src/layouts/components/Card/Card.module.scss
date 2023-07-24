@@ -1,0 +1,48 @@
+/* Float three columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 1000px) {
+    .column {
+        width: 50%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.card {
+    padding: 12px;
+    text-align: start;
+    background-color: #221f1f;
+    transition: 0.3s;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.card:hover {
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.4);
+    background-color: #111010;
+}
+
+img {
+    border-radius: 10px 10px 10px 10px;
+}

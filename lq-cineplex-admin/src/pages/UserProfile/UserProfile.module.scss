@@ -1,0 +1,64 @@
+:root {
+	--width-profile: 75vw;
+  }
+
+.wrapper-profile {
+	display: flex;
+	justify-content: center;
+}
+
+.profile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2vh;
+	width: var(--width-profile);
+	height: 80vh;
+	border-radius: 15px;
+	border: 2px solid #C92522;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.avatar {
+	margin-top: 2vh;
+	height: 25vh;
+	object-fit: contain;
+	border-radius: 100%;
+}
+
+.name {
+	margin-top: 10px;
+	font-size: 22px;
+	font-weight: 600;
+	color: rgb(239 68 68);
+}
+
+.profile-info {
+	width: 100%;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	 
+}
+
+.info-left {
+	width: 50%;
+	font-size: 25px;
+	text-align: start;
+	padding-left: calc(var(--width-profile)/15);
+}
+
+.info-left div {
+	margin-bottom: 20px;
+}
+
+.info-right {
+	width: 50%;
+	font-size: 25px;
+	text-align: start;
+	padding-left: calc(var(--width-profile)/15);
+}
+
+.info-right div {
+	margin-bottom: 20px;
+}

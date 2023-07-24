@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.showCase {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 4px;
+    color: #7e7e7e;
+}
+
+.showCase li {
+    margin: 0 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.showCase li div {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.cinema {
+    margin-bottom: 18px;
+    perspective: 400px;
+    display: grid;
+    place-items: center;
+    grid-gap: 24px;
+}
+
+.cinema .screen {
+    height: 30px;
+    background: white;
+    color: black;
+    line-height: 30px;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 30px;
+    transform: rotateX(-30deg) scale(1.1);
+    box-shadow: 0 3px 8px 5px;
+}
+
+.cinema .seats {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(8, min-content);
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cinema .seats .seat {
+    border: solid 2px #615e5e;
+}
+
+.cinema .seats .seat:nth-of-type(8n + 2) {
+    margin-right: 50px;
+}
+
+.cinema .seats .seat:nth-of-type(8n + 6) {
+    margin-right: 50px;
+}
+
+@keyframes show-off {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+.cinema .seats .seat:not(.occupied):hover,
+.cinema .seats .seat:not(.occupied):focus {
+    cursor: pointer;
+    background: #c92522;
+    transform: scale(1.2);
+}
+
+.cinema .seats .seat.selected::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: transparent;
+    border: 1px solid #c92522;
+    animation: show-off 0.8s;
+    visibility: hidden;
+}
+
+.seat {
+    display: inline-block;
+    background: inherit;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 2px #615e5e;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    top: 1px;
+}
+
+.seat.selected {
+    background: #c92522 !important;
+    border: none;
+}
+
+.seat.occupied {
+    background: #615e5e;
+}
+
+.info {
+    color: white;
+    font-size: 20px;
+}
+
+.info .count {
+    color: #c92522;
+}
+
+.info .total {
+    color: #c92522;
+}
+.label {
+    color: white;
+    line-height: 40px;
+    font-size: 15px;
+}
+
+.line {
+    width: 350px;
+    height: 5px;
+    margin: 20px 0;
+    border-radius: 5px;
+    background-color: #c92522;
+}

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+
+.wrapper-header {
+    --search-border-radius: 92px;
+    --search-height: 46px;
+    --search-top-spacer: 9px;
+    --search-button-width: 52px;
+
+    background-color: #0d0e13;
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    background-color: #0d0e13;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-cine {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.logo {
+    padding: 10px;
+    margin-left: 20px;
+    object-fit: contain;
+    height: 120px;
+    width: 125px;
+}
+
+.search {
+    position: relative;
+    width: 300px;
+    height: var(--search-height);
+    padding-left: 16px;
+    display: flex;
+    background-color: #f0f0f0;
+    border-radius: var(--search-border-radius);
+    border: 1.5px solid transparent;
+
+    input {
+        flex: 1;
+        height: 100%;
+        padding-right: 40px;
+        color: #333;
+        font-size: 1rem;
+        background-color: transparent;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: var(--search-top-spacer);
+        right: var(--search-button-width);
+        width: 1px;
+        height: calc(var(--search-height) - var(--search-top-spacer) * 2);
+        background-color: rgba(22, 24, 35, 0.12);
+    }
+
+    &:focus-within {
+        border-color: #333;
+    }
+}
+
+.clear {
+    position: absolute;
+    right: calc(var(--search-button-width) + 16px);
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(22, 24, 35, 0.34);
+    font-size: 1rem;
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--search-button-width);
+    height: 100%;
+    border-top-right-radius: var(--search-border-radius);
+    border-bottom-right-radius: var(--search-border-radius);
+    font-size: 1.2rem;
+    color: rgba(22, 24, 35, 0.34);
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+
+    &:active {
+        background-color: rgba(22, 24, 35, 0.06);
+    }
+}
+
+.user-name {
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}

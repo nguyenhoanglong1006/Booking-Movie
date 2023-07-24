@@ -1,0 +1,14 @@
+.wrapper {
+    margin: 30px 25px 0 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-card {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    align-items: center;
+    grid-gap: 50px;
+    margin-top: 20px;
+    justify-content: center;
+}

@@ -1,0 +1,19 @@
+.wrapper-default {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+}
+
+.content {
+    min-height: 1000px;
+    background-color: #221f1f;
+}
+
+.footer {
+    margin-top: auto;
+}

@@ -1,0 +1,48 @@
+.container {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    position: absolute;
+}
+
+.phimdang {
+    padding-left: 38%;
+    padding-top: 20px;
+}
+.phimdangchieu {
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    border: #080303;
+    background-color: rgb(10, 13, 13);
+    &:hover {
+        background: #c92522;
+    }
+    font-size: 20px;
+    font-style: oblique;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.titlemovie {
+    font-size: 17px;
+    color: #cf1411;
+    align-items: center;
+}
+.listphim {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.textsukien {
+    width: fit-content;
+    margin: 0 40px;
+    font-size: 30px;
+    color: #c92522;
+    font-weight: 400;
+    border-bottom: 2px solid #c92522;
+}
+
+.button-more {
+    width: 150px;
+    height: 50px;
+}

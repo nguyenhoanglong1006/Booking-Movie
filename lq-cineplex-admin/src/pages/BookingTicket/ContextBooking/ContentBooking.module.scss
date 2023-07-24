@@ -1,0 +1,25 @@
+.panel-default { 
+	border: 2px solid #afafaf;
+}
+
+.panel-default .panel-heading {
+	background-color: #c92522;
+	text-align: center;
+	height: 35px;
+}
+
+.panel-default .panel-heading .panel-title {
+	line-height: 35px;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+
+.list-content {
+	height: 70vh;
+	overflow:hidden; 
+	overflow-y:scroll;
+}
+
+ 

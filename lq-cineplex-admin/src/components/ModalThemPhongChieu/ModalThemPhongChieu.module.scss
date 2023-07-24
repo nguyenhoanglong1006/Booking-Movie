@@ -1,0 +1,52 @@
+.container-modal {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.title-modal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	font-size: 25px;
+	font-weight: 500;
+	border-bottom: 1px solid gray;
+}
+
+.group-button {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: auto;
+	padding-top: 10px;
+	border-top: 1px solid gray;
+}
+
+.wrapper-modal {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	 
+}
+.text-field {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.title-wrapper {
+	margin-top: 10px;
+}
+
+.title-rap {
+	font-size: 24px;
+	font-weight: 400;
+}

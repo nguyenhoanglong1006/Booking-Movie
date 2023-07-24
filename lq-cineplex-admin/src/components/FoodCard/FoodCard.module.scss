@@ -1,0 +1,35 @@
+.food-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 50px;
+    margin: 0 25px;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.food-card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.food-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.food-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+.food-title {
+    font-weight: 400;
+    letter-spacing: 2px;
+}

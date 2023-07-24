@@ -1,0 +1,137 @@
+.container {
+    margin: 0 50px;
+    align-items: center;
+}
+
+.breadcrumb {
+    margin-top: 40px;
+}
+
+.ticket-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #fafafa;
+    width: 100%;
+    min-height: 80vh;
+    border-radius: 8px;
+    color: black;
+    margin-bottom: 80px;
+    font-size: 62.5%;
+}
+
+.ticket-info-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 25px;
+}
+
+.movie-title {
+    font-size: 25px;
+    font-weight: 800;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.cinema-name {
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+
+.ticket-time {
+    font-size: 20px;
+}
+
+.ticket-line {
+    width: 200px;
+    height: 5px;
+    background-color: #c92522;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.ticket-info-between {
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ticket-info-between .ticket-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.ticket-info-between .ticket-total {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 200;
+}
+
+.ticket-vouchers {
+    margin: 0 25px;
+    margin-top: 15px;
+}
+
+.button-vourcher {
+    border: solid 2px #c92522;
+    background-color: #c92522;
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 4px;
+}
+
+.ticket-info-bottom {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: auto;
+}
+
+.line-bottom {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.line-bottom .ticket-line {
+    width: 300px;
+}
+
+.total-amount {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.group-button {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.group-button .button {
+    border: solid 2px #c92522;
+    border-radius: 8px;
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: 500;
+    width: 165px;
+}
+
+.group-button .button-next {
+    background-color: #c92522;
+}
+
+.group-button .button-pay {
+    width: 100%;
+    background-color: #c92522;
+    color: #fff;
+}

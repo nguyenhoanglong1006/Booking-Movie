@@ -1,0 +1,35 @@
+.ticket-seat-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 60px;
+    margin: 0 25px;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.ticket-seat-card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.ticket-room-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ticket-number-seat {
+    background-color: #c92522;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 10px;
+}
